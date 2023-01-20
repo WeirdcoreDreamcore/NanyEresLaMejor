@@ -2,7 +2,7 @@
 Solo los admins pueden tener corona si no eres admin chinga toda tu perra madre
 ]--
 local Mod = {
-    1907648884
+    1
 }
 
 local url = game:HttpGet("https://raw.githubusercontent.com/WeirdcoreDreamcore/NanyEresLaMejor/main/pineapple")
