@@ -9,7 +9,7 @@ local url = game:HttpGet("https://raw.githubusercontent.com/rogelioajax/lua/main
 local success, err = pcall(function()
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Character then
-            if table.find(cool,v.UserId) then
+            if table.find(Mod,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[👑]"..v.DisplayName
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
