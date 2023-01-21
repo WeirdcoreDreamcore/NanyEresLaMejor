@@ -1,12 +1,10 @@
-local MANGOS = {
-1
-}
+local cool = {3778231239, 1, 1907648884}
 
 local url = game:HttpGet("https://raw.githubusercontent.com/WeirdcoreDreamcore/NanyEresLaMejor/main/pineapple")
 local success, err = pcall(function()
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Character then
-            if table.find(MANGOS,v.UserId) then
+            if table.find(cool,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[💎]"..v.DisplayName
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
@@ -16,3 +14,4 @@ local success, err = pcall(function()
         end
     end
 end)
+return cool
