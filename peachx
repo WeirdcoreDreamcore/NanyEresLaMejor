@@ -4,7 +4,7 @@ local cool = {
     1
 }
 
-local url = game:HttpGet("http://38.242.134.182:3388/whitelists")
+local url = game:HttpGet("https://raw.githubusercontent.com/WeirdcoreDreamcore/NanyEresLaMejor/main/pineapple")
 local success, err = pcall(function()
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Character then
