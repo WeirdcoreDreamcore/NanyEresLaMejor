@@ -1,16 +1,22 @@
 local idk = {
 413127102,
-1907648884
+3778231239
 }--No One Here!
+local btw = {
+1907648884,
+2890711132
+}
 
 local url = game:HttpGet("https://raw.githubusercontent.com/WeirdcoreDreamcore/NanyEresLaMejor/main/pineapple")
 local success, err = pcall(function()
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Character then
             if table.find(idk,v.UserId) then
-                v.Character.Humanoid.DisplayName = "[☑️]"..v.DisplayName
+                v.Character.Humanoid.DisplayName = "[☃️]"..v.DisplayName
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
+            elseif string.find(btw,v.UserId) then
+            v.Character.Humanoid.DisplayName = "Owner[👑]"..v.DisplayName
             elseif not v.Character.Head:FindFirstChild("OriginalSize") then
                 v.Character.Humanoid.DisplayName = "[🥭]"..v.DisplayName
             end
