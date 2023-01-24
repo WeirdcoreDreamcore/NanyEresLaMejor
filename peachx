@@ -1,7 +1,7 @@
-local owner = {
+local Owner = {
 3778231239
 }
-local idk = {
+local Admin = {
 1907648884
 }--No One Here!
 
@@ -9,9 +9,9 @@ local url = game:HttpGet("https://raw.githubusercontent.com/WeirdcoreDreamcore/N
 local success, err = pcall(function()
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Character then
-            if table.find(idk,v.UserId) then
+            if table.find(Owner,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[Admin🔥]"..v.DisplayName
-            elseif string.find(owner,v.UserId) then
+            elseif string.find(Owner,v.UserId) then
             v.Character.Humanoid.DisplayName = "[Owner👑]"..v.DisplayName
             elseif string.find(url,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[⭐]"..v.DisplayName
