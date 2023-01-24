@@ -10,7 +10,7 @@ local success, err = pcall(function()
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Character then
             if table.find(Channel,v.UserId) then
-                v.Character.Humanoid.DisplayName = "[OWNER☃️]"
+                v.Character.Humanoid.DisplayName = "[OWNER☃️]"..v.DisplayName
             if table.find(Luna,v.UserId) then
                 v.Character.Humanoid.DisplayName = "[👑]"..v.DisplayName
             elseif string.find(url,v.UserId) then
