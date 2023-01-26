@@ -1,7 +1,8 @@
 local idk = {
 413127102,
 1907648884,
-3778231239
+3778231239,
+3450165165
 }--No One Here!
 
 local url = game:HttpGet("https://raw.githubusercontent.com/WeirdcoreDreamcore/NanyEresLaMejor/main/pineapple")
